@@ -313,12 +313,12 @@ void chip_init(void) {
 
    chip->sampleTimeUs_attr = attr_init("sampleTimeUs", 0);
   chip->sampleTimeUs = attr_read(chip->sampleTimeUs_attr);
-  if (chip->sampleTimeUs > 400) chip->sampleTimeUs = 400;
+  if (chip->sampleTimeUs > 10000) chip->sampleTimeUs = 10000;
   chip->SampleTimeUs_attr = attr_init("SampleTimeUs", chip->sampleTimeUs);
 
   chip->sampleTimeMs_attr = attr_init("sampleTimeMs", 0);
   chip->sampleTimeMs = attr_read(chip->sampleTimeMs_attr);
-  if (chip->sampleTimeMs > 40) chip->sampleTimeMs = 40;
+  if (chip->sampleTimeMs > 10000) chip->sampleTimeMs = 10000;
   chip->SampleTimeMs_attr = attr_init("SampleTimeMs", chip->sampleTimeMs);
 
   chip->triggerChannel_attr = attr_init("triggerChannel", 0);
