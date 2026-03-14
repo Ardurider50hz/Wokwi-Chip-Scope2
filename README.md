@@ -6,9 +6,9 @@
 
 This 4 channel scope chip allows you to graph four analog or digital signals as they vary over time.
 
-- Scope `Sample Time μs` range is 0µs to 400µs
+- Scope `Sample Time μs` range is 0µs to 10000µs
 
-- Scope `Sample Time ms` range is 0ms to 40ms .
+- Scope `Sample Time ms` range is 0ms to 10000ms .
 
 - Width of plot is 250 samples.
 
